@@ -1,7 +1,4 @@
-# TP-IA-et-systemes-embarques
-Tp IA et systèmes embarqués
-###### Transpile simple model 
-
+## Transpile simple model 
 
 Dans ce TP notre objectif est de déployer des modèles déjà entraîné sur des cibles de type micro-controlleur.
 
@@ -31,15 +28,15 @@ make
 ```
 Après compilation , on peut s'apercevoir que la prédiction du modèle model.X  :
 
-![img](./Capture d'écran 2023-03-29 150733.png)
+![Screenshot](./Pictures/Capture%20d'%C3%A9cran%202023-03-29%20150733.png)
 
 Un résulat de prédiction assez cohérent étant donné que la caractéristique de l'orientation de la maison n'a pas été prise en compte.
 
  Enfin, 
 
-![img](./compilation_c.png)
+![Compile 1](./Pictures/compilation_c.png)
 
-![img](./compilation_c1.png)
+![Compile 2](./Pictures/compilation_c1.png)
 
 
 ## Regression logistique 
