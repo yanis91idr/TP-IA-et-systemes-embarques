@@ -1,5 +1,4 @@
-###### Transpile simple model 
-
+## Transpile simple model 
 
 Dans ce TP notre objectif est de déployer des modèles déjà entraîné sur des cibles de type micro-controlleur.
 
