@@ -4,10 +4,9 @@ Dans ce TP notre objectif est de déployer des modèles déjà entraîné sur de
 
 ## On peut envisager deux approches : 
 
-    Faire une librairie qui sera chargée de charger les caractéristiques du modèle et faire en sorte en suite de faire la prédiction.
-    Faire en sorte d'avoir un fichier C prêt à l'emploi qui contiendra toutes les informations.
+Faire une librairie qui sera chargée de charger les caractéristiques du modèle et faire en sorte en suite de faire la prédiction. 
+Faire en sorte d'avoir un fichier C prêt à l'emploi qui contiendra toutes les informations.
 
-`---`
 #### Fichiers transpile 
 ## Linear Regression 
 
