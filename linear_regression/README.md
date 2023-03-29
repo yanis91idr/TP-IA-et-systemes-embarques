@@ -28,6 +28,7 @@ Le fichier [makefile](./makefile)'affiche la commande de compilation à lancer p
 make
 ```
 Après compilation , on peut s'apercevoir que la prédiction du modèle model.X  :
+
 ![Screenshot](./Capture d'écran 2023-03-29 150733.png)
 
 Un résulat de prédiction assez cohérent étant donné que la caractéristique de l'orientation de la maison n'a pas été prise en compte.
