@@ -29,7 +29,7 @@ make
 ```
 Après compilation , on peut s'apercevoir que la prédiction du modèle model.X  :
 
-![Screenshot](./Capture d'écran 2023-03-29 150733.png)
+![Screenshot](./Capture%20d'%C3%A9cran%202023-03-29%20150733.png)
 
 Un résulat de prédiction assez cohérent étant donné que la caractéristique de l'orientation de la maison n'a pas été prise en compte.
 
