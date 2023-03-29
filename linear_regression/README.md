@@ -29,15 +29,15 @@ make
 ```
 Après compilation , on peut s'apercevoir que la prédiction du modèle model.X  :
 
-![Screenshot](./Capture%20d'%C3%A9cran%202023-03-29%20150733.png)
+![Screenshot](./Pictures/Capture%20d'%C3%A9cran%202023-03-29%20150733.png)
 
 Un résulat de prédiction assez cohérent étant donné que la caractéristique de l'orientation de la maison n'a pas été prise en compte.
 
  Enfin, 
 
-![Compile 1](./compilation_c.png)
+![Compile 1](./Pictures/compilation_c.png)
 
-![Compile 2](./compilation_c1.png)
+![Compile 2](./Pictures/compilation_c1.png)
 
 
 ## Regression logistique 
