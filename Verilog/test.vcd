@@ -1,0 +1,55 @@
+$date
+	Tue Mar 21 22:35:30 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module stimulus $end
+$var wire 16 ! y [15:0] $end
+$var reg 8 " prix [7:0] $end
+$var reg 8 # taille [7:0] $end
+$scope module uut $end
+$var wire 16 $ constante [15:0] $end
+$var wire 8 % prix [7:0] $end
+$var wire 8 & taille [7:0] $end
+$var wire 16 ' resultat_mult [15:0] $end
+$var reg 16 ( y [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10011100010000 (
+b0 '
+b0 &
+b0 %
+b10011100010000 $
+b0 #
+b0 "
+b10011100010000 !
+$end
+#20000
+b11000111 #
+b11000111 &
+#40000
+b10011111010111 !
+b10011111010111 (
+b11000111 '
+b1 "
+b1 %
+#60000
+b1101101101101000 !
+b1101101101101000 (
+b1011010001011000 '
+b11101000 "
+b11101000 %
+#80000
+b11011001111000 !
+b11011001111000 (
+b111101101000 '
+b10001 #
+b10001 &
+#120000

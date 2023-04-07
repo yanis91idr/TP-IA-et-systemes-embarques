@@ -1,0 +1,78 @@
+#! /opt/homebrew/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x144706990 .scope module, "stimulus" "stimulus" 2 2;
+ .timescale -9 -12;
+v0x144719570_0 .var "prix", 7 0;
+v0x144719600_0 .var "taille", 7 0;
+v0x144719690_0 .net "y", 15 0, v0x144719410_0;  1 drivers
+S_0x144706b00 .scope module, "uut" "regression_lineaire" 2 11, 3 1 0, S_0x144706990;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "taille";
+    .port_info 1 /INPUT 8 "prix";
+    .port_info 2 /OUTPUT 16 "y";
+v0x1447090e0_0 .net *"_ivl_2", 15 0, L_0x1447197a0;  1 drivers
+L_0x148068058 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x144718ef0_0 .net *"_ivl_5", 7 0, L_0x148068058;  1 drivers
+v0x144718fa0_0 .net *"_ivl_6", 15 0, L_0x144719900;  1 drivers
+L_0x1480680a0 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x144719060_0 .net *"_ivl_9", 7 0, L_0x1480680a0;  1 drivers
+L_0x148068010 .functor BUFT 1, C4<0010011100010000>, C4<0>, C4<0>, C4<0>;
+v0x144719110_0 .net "constante", 15 0, L_0x148068010;  1 drivers
+v0x144719200_0 .net "prix", 7 0, v0x144719570_0;  1 drivers
+v0x1447192b0_0 .net "resultat_mult", 15 0, L_0x144719a40;  1 drivers
+v0x144719360_0 .net "taille", 7 0, v0x144719600_0;  1 drivers
+v0x144719410_0 .var "y", 15 0;
+E_0x144707540 .event edge, v0x144719360_0, v0x144719200_0;
+L_0x1447197a0 .concat [ 8 8 0 0], v0x144719570_0, L_0x148068058;
+L_0x144719900 .concat [ 8 8 0 0], v0x144719600_0, L_0x1480680a0;
+L_0x144719a40 .arith/mult 16, L_0x1447197a0, L_0x144719900;
+    .scope S_0x144706b00;
+T_0 ;
+    %wait E_0x144707540;
+    %load/vec4 v0x144719110_0;
+    %load/vec4 v0x1447192b0_0;
+    %add;
+    %store/vec4 v0x144719410_0, 0, 16;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x144706990;
+T_1 ;
+    %vpi_call 2 18 "$dumpfile", "test.vcd" {0 0 0};
+    %vpi_call 2 19 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x144706990 {0 0 0};
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x144719600_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x144719570_0, 0, 8;
+    %delay 20000, 0;
+    %pushi/vec4 199, 0, 8;
+    %store/vec4 v0x144719600_0, 0, 8;
+    %delay 20000, 0;
+    %pushi/vec4 1, 0, 8;
+    %store/vec4 v0x144719570_0, 0, 8;
+    %delay 20000, 0;
+    %pushi/vec4 232, 0, 8;
+    %store/vec4 v0x144719570_0, 0, 8;
+    %delay 20000, 0;
+    %pushi/vec4 17, 0, 8;
+    %store/vec4 v0x144719600_0, 0, 8;
+    %delay 40000, 0;
+    %end;
+    .thread T_1;
+    .scope S_0x144706990;
+T_2 ;
+    %vpi_call 2 34 "$monitor", "t=%3d taille=%d,prix=%d,y=%d \012", $time, v0x144719600_0, v0x144719570_0, v0x144719690_0, " " {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "/Users/yanis/Downloads/exo_fpga/test_Regression_lineaire.v";
+    "/Users/yanis/Downloads/exo_fpga/Regression_lineaire.v";
