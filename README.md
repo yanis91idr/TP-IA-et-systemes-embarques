@@ -51,3 +51,4 @@ Un programme python écrit '[choice_function.py](./choice_fucnction.py)' il perm
 ```sh
 python choice_function.py -f %filepath_csv_model% -m %model%
 ```
+Ainsi il suffit d'entrer le chemin de fichier csv puis le modele de prediction que vous souhaitez dans la ligne de commande .
