@@ -23,9 +23,31 @@ Le fichier [makefile](./makefile)'affiche la commande de compilation à lancer p
 ```sh
 make
 ```
-Après compilation , on peut s'apercevoir que la prédiction du modèle model.X  :
-
-Un résulat de prédiction assez cohérent étant donné que la caractéristique de l'orientation de la maison n'a pas été prise en compte.
 
 
 ## Regression logistique 
+Le dataset de ce modèle est tiré du fichier '[prediction_maintenance.csv](./prediction_maintenance.csv)'
+
+Le programme est '[logisitic_regression.py](./linear_regression.py)'
+
+Le programme permet de charger un modele de regression linèaire entrainé '[linear_regression.joblib](./linear_regression.joblib)'
+Il récupère ensuite  les valeurs de coefficients , génère une chaîne de caractère contenant le code C, permettant de calculer la prédiction du modèle (float prediction(float *features, int n_feature) )avec les valeur du coefficient.
+
+Ensuite , il génère une fonction main  [main.c](./main.c)'qui permet d'appeler prediction sur une donnée définié par un tableau statique de votre choix puis sauvegarde le code c généré dans [logistic_regression.c](./linear_regression.c)'.
+
+Le fichier [makefile](./makefile)'affiche la commande de compilation à lancer pour le compiler telle que :
+```sh
+make
+```
+## Decision Tree
+
+
+
+
+
+## Choice Function
+
+Un programme python écrit '[choice_function.py](./choice_fucnction.py)' il permet une ligne de commande du type :
+```sh
+python choice_function.py -f %filepath_csv_model% -m %model%
+```
