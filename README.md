@@ -16,7 +16,7 @@ Le programme est '[linear_regression.py](./linear_regression.py)'
 Le programme permet de charger un modele de regression linèaire entrainé '[linear_regression.joblib](./linear_regression.joblib)'
 Il récupère ensuite  les valeurs de coefficients , génère une chaîne de caractère contenant le code C, permettant de calculer la prédiction du modèle (float prediction(float *features, int n_feature) )avec les valeur du coefficient.
 
-Ensuite , il génère une fonction main  [main.c](./main.c)'qui permet d'appeler prediction sur une donnée définié par un tableau statique de votre choix puis sauvegarde le code c généré dans [prediction.c](./prediction.c)'.
+Ensuite , il génère une fonction main  [main.c](./main.c)'qui permet d'appeler prediction sur une donnée définié par un tableau statique de votre choix puis sauvegarde le code c généré dans [linear_regression.c](./linear_regression.c)'.
 
 Le fichier [makefile](./makefile)'affiche la commande de compilation à lancer pour le compiler telle que :
 ```sh
