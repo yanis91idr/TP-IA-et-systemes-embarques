@@ -3,11 +3,12 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 # Chemin vers le fichier joblib contenant le modèle entraîné
-MODEL_FILE = 'regression.joblib'
+MODEL_FILE = 'linear_regression.joblib'
 
 
 def build_model():
     df = pd.read_csv('houses.csv')
+    print(df)
     x = df[['size', 'nb_rooms', 'garden']]
     y = df['price']
     model = LinearRegression()
@@ -16,7 +17,7 @@ def build_model():
     return regression_model
 
 
-def main():
+def linear():
     build_model()
 
     # Charger le modèle à partir du fichier joblib
@@ -43,7 +44,7 @@ def main():
     print(code_c)
 
      # Écrire le code C dans un fichier
-    with open('prediction.c', 'w') as f:
+    with open('linear_regression.c', 'w') as f:
         f.write(code_c)
 
     # Appel de  la fonction "prediction" avec les  caractéristiques définies
@@ -73,6 +74,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    linear()
 
 
