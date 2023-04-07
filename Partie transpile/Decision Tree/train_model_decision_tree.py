@@ -9,7 +9,7 @@ def build_model():
     x = df.drop(columns='last_revision')
     y = df['last_revision']
 
-    model = DecisionTreeClassifier(random_state=42, max_depth=20)
+    model = DecisionTreeClassifier(random_state=32, max_depth=40)
 
     model.fit(x, y)
 
