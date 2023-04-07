@@ -8,6 +8,7 @@ Faire une librairie qui sera chargée de charger les caractéristiques du modèl
 Faire en sorte d'avoir un fichier C prêt à l'emploi qui contiendra toutes les informations.
 
 ## Composition du dossier :
+Une partie concernant Verilog puis ensuite , 
 
 ## Regression lineaire
 Le dataset de ce modèle est tiré du fichier '[houses.csv](./houses.csv)'
