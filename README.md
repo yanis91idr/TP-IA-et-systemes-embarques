@@ -9,6 +9,7 @@ Faire en sorte d'avoir un fichier C prêt à l'emploi qui contiendra toutes les 
 
 ## Composition du dossier :
 
+## Regression lineaire
 Le dataset de ce modèle est tiré du fichier '[houses.csv](./houses.csv)'
 
 Le programme est '[linear_regression.py](./linear_regression.py)'
@@ -24,15 +25,7 @@ make
 ```
 Après compilation , on peut s'apercevoir que la prédiction du modèle model.X  :
 
-![Screenshot](./Pictures/Capture%20d'%C3%A9cran%202023-03-29%20150733.png)
-
 Un résulat de prédiction assez cohérent étant donné que la caractéristique de l'orientation de la maison n'a pas été prise en compte.
-
- Enfin, 
-
-![Compile 1](./Pictures/compilation_c.png)
-
-![Compile 2](./Pictures/compilation_c1.png)
 
 
 ## Regression logistique 
