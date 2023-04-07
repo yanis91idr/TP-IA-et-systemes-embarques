@@ -41,9 +41,7 @@ make
 ```
 ## Decision Tree
 
-
-
-
+Le modèle est entrainé
 
 ## Choice Function
 
